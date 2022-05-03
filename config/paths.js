@@ -23,8 +23,6 @@ module.exports = {
   appIndexJs: resolveModule(resolveApp, 'src/index'),
   appPackageJson: resolveApp('package.json'),
   appNodeModules: resolveApp('node_modules'),
-  appSrc: resolveApp('src'),
-  appSrcComponents: resolveApp('src/components'),
-  appSrcUtils: resolveApp('src/utils'),
   appTsConfig: resolveApp('tsconfig.json'),
+  appSrc: resolveApp('src'),
 };

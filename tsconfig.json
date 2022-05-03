@@ -5,7 +5,7 @@
     "outDir": "build",
     "sourceMap": true,
     "allowJs": true,
-    "module": "es6",
+    "module": "esnext",
     "lib": ["es7", "dom"],
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -22,9 +22,7 @@
     "skipLibCheck": true
   },
   "paths": {
-    "src/*": ["src/*"],
-    "components/*": ["src/components/*"],
-    "utils/*": ["src/utils/*"]
+    "src/*": ["src/*"]
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*.tsx", "src/**/*.ts"]

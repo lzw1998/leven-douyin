@@ -19,7 +19,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'max-len': 0,
     'import/extensions': [
-      2,
+      0,
       'always',
       {
         js: 'never',
@@ -29,6 +29,8 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-curly-newline': 'off',
+    'implicit-arrow-linebreak': 'off',
   },
   overrides: [
     {
@@ -58,6 +60,7 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': ['warn'],
         'jsx-a11y/no-noninteractive-element-interactions': ['warn'],
         'jsx-a11y/no-autofocus': ['warn'],
+        'jsx-a11y/anchor-has-content': 'off',
         'jsx-quotes': ['error', 'prefer-single'],
         'object-curly-spacing': ['error', 'always'],
       },
@@ -106,6 +109,7 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': ['warn'],
         'jsx-a11y/no-noninteractive-element-interactions': ['warn'],
         'jsx-a11y/no-autofocus': ['warn'],
+        'jsx-a11y/anchor-has-content': 'off',
         'object-curly-spacing': ['error', 'always'],
       },
     },

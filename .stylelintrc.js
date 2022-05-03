@@ -30,13 +30,12 @@ module.exports = {
     'media-feature-colon-space-before': ['never', { severity: 'warning' }],
     'media-feature-colon-space-after': ['always', { severity: 'warning' }],
     'no-duplicate-selectors': [true, { severity: 'warning' }],
-    'rule-empty-line-before': ['always', { severity: 'warning' }],
+    'rule-empty-line-before': ['always-multi-line'],
     'selector-attribute-operator-space-before': ['never', { severity: 'warning' }],
     'selector-attribute-operator-space-after': ['never', { severity: 'warning' }],
     'declaration-block-trailing-semicolon': ['always', { severity: 'warning' }],
     'selector-attribute-brackets-space-inside': ['never', { severity: 'warning' }],
     'comment-whitespace-inside': ['always', { severity: 'warning' }],
-    'comment-empty-line-before': ['always', { severity: 'warning' }],
     'selector-pseudo-class-parentheses-space-inside': ['never', { severity: 'warning' }],
     'media-feature-parentheses-space-inside': ['never', { severity: 'warning' }],
     'function-calc-no-unspaced-operator': [true, { severity: 'warning' }],
@@ -44,6 +43,24 @@ module.exports = {
     'declaration-block-semicolon-space-before': ['never', { severity: 'warning' }],
     'block-closing-brace-empty-line-before': ['never', { severity: 'warning' }],
     'comment-empty-line-before': ['never', { severity: 'warning' }],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested'],
+      },
+    ],
+    'custom-property-empty-line-before': [
+      'always',
+      {
+        except: ['after-custom-property', 'first-nested'],
+      },
+    ],
+    'declaration-empty-line-before': [
+      'always',
+      {
+        except: ['after-declaration', 'first-nested'],
+      },
+    ],
     'order/properties-order': [
       //css内容
       'content',

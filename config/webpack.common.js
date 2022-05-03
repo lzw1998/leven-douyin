@@ -20,8 +20,6 @@ module.exports = {
     extensions: moduleFileExtensions.map((ext) => `.${ext}`),
     alias: {
       src: paths.appSrc,
-      components: paths.appSrcComponents,
-      utils: paths.appSrcUtils,
     },
   },
   module: {
@@ -50,7 +48,15 @@ module.exports = {
         test: cssModuleRegex,
         use: [
           isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { modules: { mode: 'local', localIdentName: '[hash:base64:6]' } } },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: isEnvDevelopment ? '[local]--[hash:base64:5]' : '[name]__[hash:base64:6]',
+              },
+            },
+          },
           { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
         ],
       },
@@ -68,7 +74,15 @@ module.exports = {
         test: sassModuleRegex,
         use: [
           isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { modules: { mode: 'local', localIdentName: '[hash:base64:6]' } } },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: isEnvDevelopment ? '[local]--[hash:base64:5]' : '[name]__[hash:base64:6]',
+              },
+            },
+          },
           { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
           'sass-loader',
         ],
