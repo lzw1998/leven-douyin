@@ -1,0 +1,33 @@
+html,
+body {
+  min-width: 628px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  font-family: "myfont",sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+@font-face {
+  font-family: "myfont";
+  src: url(./font.ttf);
+}

@@ -1,0 +1,122 @@
+.side-bar-container {
+  position: relative;
+  flex-basis: 72px;
+
+  .side-menu-container {
+    overflow: hidden;
+    position: fixed;
+    z-index: 20;
+    width: 72px;
+    height: calc(100vh - 60px);
+    background-color: var(--color-navigation-bg);
+    outline: none;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+
+    .side-menu-wrapper {
+      display: flex;
+      width: 72px;
+      margin-bottom: 143px;
+      flex-shrink: 0;
+      user-select: none;
+    }
+
+    .side-menu-scroll {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      position: relative;
+      height: 100%;
+
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &.scroll-y {
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .logo-container {
+    position: relative;
+    height: 60px;
+    flex-basis: 72px;
+  }
+
+  .logo-wrapper {
+    transform: translate(-50%,-50%);
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 165%;
+    background: var(--container-background);
+    align-items: center;
+    flex-basis: 72px;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .logo-wrapper .logo {
+    transition: opacity .3s;
+    display: block;
+    width: 30px;
+    height: 34px;
+    background: var(--logo-small-url);
+    opacity: 1;
+  }
+
+  .full-height {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1240px) {
+
+  .side-bar-container {
+    flex-basis: 172px;
+
+    .side-menu-container {
+      width: 172px;
+
+      .side-menu-wrapper {
+        width: 172px;
+      }
+
+      .side-menu-scroll {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+
+        &.scroll-y {
+          overflow-x: hidden;
+          overflow-y: scroll;
+        }
+      }
+    }
+
+    .logo-wrapper {
+      height: 165%;
+      background: var(--container-background);
+    }
+    
+    .logo-wrapper .logo {
+      width: 91px;
+      height: 34px;
+      background: var(--logo-url);
+      opacity: 1;
+    }
+  }
+}
+

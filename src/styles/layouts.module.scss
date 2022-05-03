@@ -1,0 +1,35 @@
+:root[dark] {
+  --container-background: linear-gradient(180deg,#060716 80%,#06071600);
+  --color-navigation-bg: #060716;
+  --color-page-bg: #161722;
+  --color-text-0: hsl(0deg 0% 100% / 90%);
+  --color-text-0-hover: #fff;
+  --logo-small-url: url(src/assets/logo-horizontal-small-dark.svg) no-repeat;
+  --logo-url: url(src/assets/logo-dark.svg) no-repeat;
+}
+
+:root {
+  --container-background: linear-gradient(180deg,#eff0f3 80%,#f1f2f500);
+  --color-navigation-bg: #f1f2f5;
+  --color-page-bg: #f1f2f5;
+  --color-text-0: #2f3035;
+  --color-text-0-hover: #000;
+  --logo-small-url: url(src/assets/logo-horizontal-small.svg) no-repeat;
+  --logo-url: url(src/assets/logo.svg) no-repeat;
+}
+
+.app-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: row;
+  background-color: var(--color-page-bg);
+}
+
+// .app-wrapper[dark] {
+//   --color-page-bg: #161722;
+// }
+
+// .app-wrapper {
+//   --color-page-bg: #f1f2f5;
+// }
