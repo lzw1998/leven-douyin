@@ -1,4 +1,4 @@
-.side-menu {
+.douyin-side-menu {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -64,7 +64,7 @@
 
 @media(min-width: 1240px) {
   
-  .side-menu .side-menu-segment {
+  .douyin-side-menu .side-menu-segment {
     margin: 12px 48px 0 40px;
   }
 

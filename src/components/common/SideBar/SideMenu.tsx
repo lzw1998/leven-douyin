@@ -25,7 +25,7 @@ function SideMenu({ list }: SideMenuProps) {
     <div className={`${style['side-menu-container']} ${style['scroll-y']}`}>
       <div className={`${style['side-menu-scroll']} ${style['scroll-y']}`}>
         <div className={`${style['side-menu-wrapper']} `}>
-          <div className={`${sidemenuStyle['side-menu']} ${style['full-height']}`}>
+          <div className={`${sidemenuStyle['douyin-side-menu']} ${style['full-height']}`}>
             {list.map((item: ListItem) => (
               <div
                 key={item.value}
