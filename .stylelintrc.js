@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['stylelint-order', 'stylelint-declaration-block-no-ignored-properties', 'stylelint-scss'],
   rules: {
     indentation: 2,
+    'alpha-value-notation': 'number',
     'no-missing-end-of-source-newline': [true, { severity: 'warning' }],
     'block-opening-brace-space-before': ['always', { severity: 'warning' }],
     'declaration-colon-space-after': ['always', { severity: 'warning' }],
@@ -23,6 +24,7 @@ module.exports = {
     'color-hex-length': ['short', { severity: 'warning' }],
     'color-hex-case': ['lower', { severity: 'warning' }],
     'color-named': ['never', { severity: 'warning' }],
+    'color-function-notation': 'legacy',
     'font-weight-notation': ['numeric', { severity: 'warning' }],
     'font-family-name-quotes': ['always-unless-keyword', { severity: 'warning' }],
     'media-feature-range-operator-space-before': ['always', { severity: 'warning' }],
