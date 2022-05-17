@@ -14,7 +14,7 @@ module.exports = {
     'selector-combinator-space-after': ['always', { severity: 'warning' }],
     'selector-attribute-quotes': ['always', { severity: 'warning' }],
     'block-opening-brace-newline-after': ['always', { severity: 'warning' }],
-    'selector-no-qualifying-type': [true, { severity: 'warning' }],
+    'selector-no-qualifying-type': [true, { severity: 'warning', ignore: ['attribute', 'class', 'id'] }],
     'shorthand-property-no-redundant-values': [true, { severity: 'warning' }],
     'declaration-no-important': [true, { severity: 'warning' }],
     'string-quotes': ['double', { severity: 'warning' }],
