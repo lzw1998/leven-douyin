@@ -5,7 +5,12 @@ import layoutsStyle from 'src/styles/layouts.module.scss';
 
 function AppWrapper() {
   return (
-    <div className={layoutsStyle['app-container']}>
+    <div
+      className={layoutsStyle['app-container']}
+      style={{
+        flexDirection: 'row',
+      }}
+    >
       <SideBar />
       <div className={layoutsStyle['main-container']}>
         <Header />

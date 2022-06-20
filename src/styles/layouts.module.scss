@@ -1,21 +1,63 @@
 :root[dark] {
   --container-background: linear-gradient(180deg,#060716 80%,#06071600);
   --color-navigation-bg: #060716;
-  --color-page-bg: #161722;
-  --color-text-0: hsl(0deg 0% 100% / 90%);
+  --color-page-bg: rgb(22, 23, 34);
+  --color-text-0: hsla(0deg,0%,100%,.9);
+  --color-text-1: hsla(0deg,0%,100%,.8);
+  --color-text-2: hsla(0deg,0%,100%,.7);
+  --color-text-3: hsla(0deg,0%,100%,.5);
+  --color-text-4: hsla(0deg,0%,100%,.35);
   --color-text-0-hover: #fff;
+  --color-border: hsla(0deg,0%,100%,.03);
   --logo-small-url: url(src/assets/logo-horizontal-small-dark.svg) no-repeat;
   --logo-url: url(src/assets/logo-dark.svg) no-repeat;
+  --overlay-bg: #363741;
+  --overlay-bg-2: rgba(54, 55, 65, .4);
+  --divider-background: linear-gradient(180deg,rgba(6, 7, 22, .6),rgba(6, 7, 22, 0));
+  --color-bg-0: #252632;
+  --color-bg-1: #2e2f3b;
+  --color-bg-2: #292b35;
+  --color-bg-3: #40424b;
+  --color-bg-skeleton-stroke: rgba(231,231,236,.03);
+  --color-anti-white: #fff;
+  --shadow-1: 0 0 24px rgba(0,0,0,.4);
+  --shadow-2: 0 0 24px rgba(0,0,0,.7);
+  --im-header-bg-start: #20202b;
+  --im-header-bg-end: rgba(32,32,43,0);
+  --im-share-list-bg-start: #252632;
+  --im-share-list-bg-end: rgba(37,38,50,0);
+  --im-swipper-mask-end: rgba(37,38,50,0);
 }
 
 :root {
   --container-background: linear-gradient(180deg,#eff0f3 80%,#f1f2f500);
   --color-navigation-bg: #f1f2f5;
-  --color-page-bg: #f1f2f5;
+  --color-page-bg: #fff;
   --color-text-0: #2f3035;
+  --color-text-1: rgba(47,48,53,.9);
+  --color-text-2: rgba(47,48,53,.7);
+  --color-text-3: rgba(47,48,53,.4);
+  --color-text-4: #fff;
   --color-text-0-hover: #000;
+  --color-border: #f1f2f5;
   --logo-small-url: url(src/assets/logo-horizontal-small.svg) no-repeat;
   --logo-url: url(src/assets/logo.svg) no-repeat;
+  --overlay-bg: #e7e7ec;
+  --overlay-bg-2: rgba(231,231,236 , .4);
+  --divider-background: linear-gradient(180deg,rgba(241, 242, 245, .6),rgba(241, 242, 245, 0));
+  --color-bg-0: #fff;
+  --color-bg-1: #f8f9fd;
+  --color-bg-2: #eff0f3;
+  --color-bg-3: #323442;
+  --color-bg-skeleton-stroke: rgba(231,231,236,.3);
+  --color-anti-white: #fff;
+  --shadow-1: 0 0 24px rgba(0,0,0,.1);
+  --shadow-2: 0 0 24px rgba(0,0,0,.12);
+  --im-header-bg-start: #f8f9fd;
+  --im-header-bg-end: rgba(248,249,253,0);
+  --im-share-list-bg-start: #fff;
+  --im-share-list-bg-end: hsla(0deg,0%,100%,0);
+  --im-swipper-mask-end: hsla(0deg,0%,100%,0);
 }
 
 .app-container {
@@ -23,12 +65,14 @@
   width: 100%;
   height: 100vh;
   flex-direction: row;
+  background-color: #fff;
   background-color: var(--color-page-bg);
 }
 
 .main-container {
   display: flex;
   overflow: hidden;
+  position: relative;
   height: 100%;
   flex-direction: column;
   flex-grow: 1;

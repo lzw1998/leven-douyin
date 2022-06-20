@@ -54,7 +54,6 @@
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
-    "lodash-es": "^4.17.21",
     "mini-css-extract-plugin": "^2.6.0",
     "node-sass": "^7.0.1",
     "postcss-loader": "^6.2.1",
@@ -96,10 +95,15 @@
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.17.9",
+    "@icon-park/react": "^1.4.0",
+    "ahooks": "^3.4.0",
     "axios": "^0.26.1",
     "classnames": "^2.3.1",
+    "lodash-es": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "swiper": "^8.2.2",
+    "xgplayer": "^2.31.6"
   }
 }

@@ -41,7 +41,14 @@ module.exports = {
         use: [
           isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['autoprefixer']],
+              },
+            },
+          },
         ],
       },
       {
@@ -57,7 +64,14 @@ module.exports = {
               },
             },
           },
-          { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['autoprefixer']],
+              },
+            },
+          },
         ],
       },
       {
@@ -66,7 +80,14 @@ module.exports = {
         use: [
           isEnvDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['autoprefixer']],
+              },
+            },
+          },
           'sass-loader',
         ],
       },
@@ -83,7 +104,14 @@ module.exports = {
               },
             },
           },
-          { loader: 'postcss-loader', options: { postcssOptions: { plugins: [['autoprefixer']] } } },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['autoprefixer']],
+              },
+            },
+          },
           'sass-loader',
         ],
       },
@@ -108,7 +136,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: paths.appHtml, filename: 'index.html', inject: 'body' }),
+    new HtmlWebpackPlugin({
+      template: paths.appHtml,
+      filename: 'index.html',
+      inject: 'body',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

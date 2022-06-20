@@ -28,9 +28,21 @@ module.exports = {
         tsx: 'never',
       },
     ],
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    ],
     'react/jsx-curly-newline': 'off',
     'implicit-arrow-linebreak': 'off',
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+      },
+    ],
+    'operator-linebreak': ['off'],
   },
   overrides: [
     {
@@ -46,17 +58,38 @@ module.exports = {
       parser: '@babel/eslint-parser',
       plugins: ['react', 'react-hooks', 'import'],
       rules: {
-        indent: ['error', 2, { SwitchCase: 1 }],
+        indent: [
+          'error',
+          2,
+          {
+            SwitchCase: 1,
+          },
+        ],
         'react/display-name': 'off',
         'react/jsx-indent': ['error', 2],
         'react/jsx-indent-props': ['error', 2],
         'react/prefer-stateless-function': ['warn'],
         'react/no-find-dom-node': ['warn'],
         'react/prop-types': 'off',
-        'operator-linebreak': ['warn', 'after', { overrides: { '?': 'before', ':': 'before' } }],
+        'operator-linebreak': [
+          'warn',
+          'after',
+          {
+            overrides: {
+              '?': 'before',
+              ':': 'before',
+            },
+          },
+        ],
         'import/no-unresolved': 'off',
         semi: ['error', 'always'],
-        'keyword-spacing': ['error', { before: true, after: true }],
+        'keyword-spacing': [
+          'error',
+          {
+            before: true,
+            after: true,
+          },
+        ],
         'jsx-a11y/click-events-have-key-events': ['warn'],
         'jsx-a11y/no-noninteractive-element-interactions': ['warn'],
         'jsx-a11y/no-autofocus': ['warn'],
@@ -91,6 +124,7 @@ module.exports = {
         'react/prefer-stateless-function': ['warn'],
         'react/no-find-dom-node': ['warn'],
         'react/prop-types': 'off',
+        'react/require-default-props': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -102,15 +136,23 @@ module.exports = {
         '@typescript-eslint/no-inferrable-types': 'off',
         '@typescript-eslint/no-this-alias': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/ban-types': 'off',
         'import/no-unresolved': 'off',
         semi: ['error', 'always'],
-        'keyword-spacing': ['error', { before: true, after: true }],
+        'keyword-spacing': [
+          'error',
+          {
+            before: true,
+            after: true,
+          },
+        ],
         'jsx-quotes': ['error', 'prefer-single'],
         'jsx-a11y/click-events-have-key-events': ['warn'],
         'jsx-a11y/no-noninteractive-element-interactions': ['warn'],
         'jsx-a11y/no-autofocus': ['warn'],
         'jsx-a11y/anchor-has-content': 'off',
         'object-curly-spacing': ['error', 'always'],
+        'object-curly-newline': ['off'],
       },
     },
   ],

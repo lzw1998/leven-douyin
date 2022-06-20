@@ -1,6 +1,9 @@
 .side-bar-container {
   position: relative;
   flex-basis: 72px;
+  background-color: #f1f2f5;
+  background-color: var(--color-navigation-bg);
+  flex-shrink: 0;
 
   .side-menu-container {
     overflow: hidden;
@@ -76,11 +79,15 @@
     background: var(--logo-small-url);
     opacity: 1;
   }
-
+  
+  &.full-height,
   .full-height {
     height: 100%;
   }
 }
+
+html[dark] .side-bar-container {
+  --container-background: linear-gradient(180deg,#060716 80%,#06071600);}
 
 @media (min-width: 1240px) {
 

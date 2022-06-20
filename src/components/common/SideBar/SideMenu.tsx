@@ -42,7 +42,7 @@ function SideMenu({ list }: SideMenuProps) {
                   to={item.route}
                 >
                   <div className={sidemenuStyle['side-menu-item-icon']}>
-                    <svg className={sidemenuStyle['iconpark-icon']}>
+                    <svg className={sidemenuStyle.icon}>
                       <use href={`#${item.icon}`} />
                     </svg>
                   </div>

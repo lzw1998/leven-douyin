@@ -45,6 +45,7 @@ module.exports = {
     'declaration-block-semicolon-space-before': ['never', { severity: 'warning' }],
     'block-closing-brace-empty-line-before': ['never', { severity: 'warning' }],
     'comment-empty-line-before': ['never', { severity: 'warning' }],
+    'selector-class-pattern': null,
     'at-rule-empty-line-before': [
       'always',
       {

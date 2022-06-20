@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 const AppWrapper = React.lazy(() => import('src/layouts/AppWrapper'));
-const Recommend = React.lazy(() => import('src/pages/recommend'));
+const Recommend = React.lazy(() => import('src/pages/Recommend'));
 const Discover = React.lazy(() => import('src/pages/discover'));
 const Follow = React.lazy(() => import('src/pages/follow'));
 const Hot = React.lazy(() => import('src/pages/hot'));
